@@ -6,13 +6,12 @@ repositories {
     mavenCentral()
 }
 
-tasks {
-    sourceSets {
-        main {
-            java.srcDirs("src")
-        }
-    }
+dependencies {
+    implementation(kotlin("stdlib"))
+    implementation(kotlin("stdlib-jdk8"))
+}
 
+tasks {
     wrapper {
         gradleVersion = "7.3"
     }
